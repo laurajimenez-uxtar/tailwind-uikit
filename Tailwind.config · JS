@@ -1,0 +1,160 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Base colors
+        base: {
+          50: '#ffffff',
+          100: '#030712',
+        },
+        // Neutral (Gray)
+        neutral: {
+          50: '#f7f7f8',
+          100: '#e6e6e6',
+          200: '#d4d4d5',
+          300: '#c0c0c1',
+          400: '#afaeb0',
+          500: '#8e8e8f',
+          600: '#68686a',
+          700: '#434245',
+          800: '#363539',
+          900: '#1d1c20',
+          950: '#040307',
+        },
+        // Primary colors
+        primary: {
+          50: '#E5E2F3',
+          100: '#CAC6E7',
+          200: '#9990D0',
+          300: '#6457B7',
+          400: '#433984',
+          500: '#27214D',
+          600: '#1F1A3D',
+          700: '#18142E',
+          800: '#100E20',
+          900: '#07060E',
+          950: '#040307',
+        },
+        // Secondary colors
+        secondary: {
+          50: '#F2ECFE',
+          100: '#E8DDFD',
+          200: '#D0BBFC',
+          300: '#B694FA',
+          400: '#9F72F8',
+          500: '#8750F6',
+          600: '#5C11F3',
+          700: '#4309B8',
+          800: '#2E067E',
+          900: '#17033F',
+          950: '#0B011D',
+        },
+        // Tertiary colors
+        tertiary: {
+          50: '#FFE5EE',
+          100: '#FFCCDD',
+          200: '#FF99BB',
+          300: '#FF6698',
+          400: '#FF3376',
+          500: '#FC0053',
+          600: '#CC0043',
+          700: '#990032',
+          800: '#660022',
+          900: '#330011',
+          950: '#1A0008',
+        },
+        // Positive (Success)
+        positive: {
+          50: '#E6FAEE',
+          100: '#D0F5E1',
+          200: '#A2ECC2',
+          300: '#73E2A4',
+          400: '#45D985',
+          500: '#27BE69',
+          600: '#1F9854',
+          700: '#17723F',
+          800: '#104C2A',
+          900: '#082615',
+          950: '#031109',
+        },
+        // Negative (Error)
+        negative: {
+          50: '#FBEAEA',
+          100: '#F6D5D5',
+          200: '#EDABAB',
+          300: '#E48181',
+          400: '#DB5757',
+          500: '#D32F2F',
+          600: '#A82424',
+          700: '#7E1B1B',
+          800: '#541212',
+          900: '#2A0909',
+          950: '#150404',
+        },
+        // Warning
+        warning: {
+          50: '#FFF8E5',
+          100: '#FFF3D1',
+          200: '#FFE59E',
+          300: '#FFD970',
+          400: '#FFCB3D',
+          500: '#FFBF0F',
+          600: '#D69D00',
+          700: '#A37800',
+          800: '#6B4F00',
+          900: '#382900',
+          950: '#1A1300',
+        },
+        // Info
+        info: {
+          50: '#EBEFFF',
+          100: '#D6E0FF',
+          200: '#A8BDFF',
+          300: '#809DFF',
+          400: '#527AFF',
+          500: '#295BFF',
+          600: '#0037EB',
+          700: '#002AB3',
+          800: '#001B75',
+          900: '#000E3D',
+          950: '#00071F',
+        },
+      },
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        // Extending Tailwind's default sizes with your specific scale
+        '7xl': ['72px', { lineHeight: '108px', fontWeight: '800' }],
+        '6xl': ['60px', { lineHeight: '90px', fontWeight: '800' }],
+        '5xl': ['48px', { lineHeight: '72px', fontWeight: '800' }],
+        '4xl': ['36px', { lineHeight: '54px', fontWeight: '800' }],
+        '3xl': ['30px', { lineHeight: '45px', fontWeight: '800' }],
+        'lg': ['18px', { lineHeight: '27px' }],
+        'base': ['16px', { lineHeight: '24px' }],
+        'sm': ['14px', { lineHeight: '21px' }],
+        'xs': ['12px', { lineHeight: '18px' }],
+      },
+      spacing: {
+        // Custom spacing scale (in addition to Tailwind's default)
+        // 4, 8, 12, 16, 20, 24, 28, 32, 36
+        // Already covered by Tailwind except:
+        '28': '28px',
+        '36': '36px',
+      },
+      borderRadius: {
+        // Forms & buttons: 12px
+        // Chips: 36px
+        // Containers: 16px
+        'form': '12px',
+        'chip': '36px',
+        'container': '16px',
+      },
+    },
+  },
+  plugins: [],
+}
